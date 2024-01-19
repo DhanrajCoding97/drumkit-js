@@ -1,4 +1,4 @@
-function playsSound() {
+function playsSound(e) {
   const audio = this.document.querySelector(`audio[data-key="${e.keyCode}"]`)
   const key = this.document.querySelector(`.key[data-key="${e.keyCode}"]`)
   if(!audio) return //
